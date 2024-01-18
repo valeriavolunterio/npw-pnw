@@ -116,7 +116,39 @@ export default function App() {
           }}
         />
         <Tab.Screen
-          name="Sell"
+          name="Map"
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="plus-circle"
+                color={color}
+                size={size}
+              />
+            ),
+          }}
+        >
+          {() => (
+            <SellItemScreen products={products} saveProducts={saveProducts} />
+          )}
+        </Tab.Screen>
+        <Tab.Screen
+          name="Search"
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="plus-circle"
+                color={color}
+                size={size}
+              />
+            ),
+          }}
+        >
+          {() => (
+            <SellItemScreen products={products} saveProducts={saveProducts} />
+          )}
+        </Tab.Screen>
+        <Tab.Screen
+          name="Passport"
           options={{
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons
