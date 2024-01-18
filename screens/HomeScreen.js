@@ -14,7 +14,7 @@ import DiscountedFilter from "../components/DiscountedItemsFilter.js";
 const styles = StyleSheet.create({
   container: {
     flex: 2,
-    backgroundColor: "#fff",
+    backgroundColor: "#FFF9F5",
   },
   itemContainer: {
     flex: 1 / 2,
